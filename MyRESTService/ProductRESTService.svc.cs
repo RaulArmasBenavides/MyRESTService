@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.IO;
 
 namespace MyRESTService
 {
@@ -17,5 +18,15 @@ namespace MyRESTService
             return Products.Instance.ProductList;
         }
 
+        public string UploadImage(Stream stream)
+        {
+            byte[] buffer = new byte[10000];
+            stream.Read(buffer, 0, 10000);
+            FileStream f = new FileStream(@"C:\Users\raula\OneDrive - BW2 Technologies AG\Pictures\test\sample.jpg", FileMode.OpenOrCreate);
+            f.Write(buffer, 0, buffer.Length);
+            f.Close();
+            stream.Close();
+            return "Recieved the image on server";
+        }
     }
 }
