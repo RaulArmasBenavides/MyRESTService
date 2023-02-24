@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using System.Collections;
-using System.Text;
-using System.IO;
 
 namespace MyRESTService
 {
@@ -26,7 +21,7 @@ namespace MyRESTService
         [OperationContract]
         [WebInvoke(
            Method = "POST",
-           UriTemplate = "UploadImage/",
+           UriTemplate = "UploadImage",
            RequestFormat = WebMessageFormat.Json,
            ResponseFormat = WebMessageFormat.Json)]
         string UploadImage(Stream stream);
