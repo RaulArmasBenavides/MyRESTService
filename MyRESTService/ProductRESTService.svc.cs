@@ -23,8 +23,5 @@ namespace MyRESTService
             stream.Close();
             return "Recieved the image on server";
         }
-
-
-
     }
 }

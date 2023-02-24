@@ -8,37 +8,37 @@ namespace MyRESTService.Entity
     {
         public ReportEntity()
         {
-            this.key = "";
-            this.idmotexce = 0;
-            this.idMotivo = 0;
-            this.fec_fin_t = string.Empty;
-            this.fec_ini_t = string.Empty;
+            this.Key = "";
+            this.Idmotexce = 0;
+            this.IdMotivo = 0;
+            this.Fec_fin_t = string.Empty;
+            this.Fec_ini_t = string.Empty;
 
         }
 
         [DataMember(Name = "key", Order = 1)]
-        public string key { get; set; }
+        public string Key { get; set; }
 
         [DataMember(Name = "idmotexce", Order = 2)]
-        public int idmotexce { get; set; }
+        public int Idmotexce { get; set; }
 
         [DataMember(Name = "idMotivo", Order = 3)]
-        public int idMotivo { get; set; }
+        public int IdMotivo { get; set; }
 
         [DataMember(Name = "idsoldot", Order = 4)]
-        public int idsoldot { get; set; }
+        public int Idsoldot { get; set; }
 
         [DataMember(Name = "fec_ini", Order = 5)]
-        public DateTime fec_ini { get; set; }
+        public DateTime Fec_ini { get; set; }
 
         [DataMember(Name = "fec_fin", Order = 6)]
-        public DateTime fec_fin { get; set; }
+        public DateTime Fec_fin { get; set; }
 
         [DataMember(Name = "fec_ini_t", Order = 7)]
-        public string fec_ini_t { get; set; }
+        public string Fec_ini_t { get; set; }
 
         [DataMember(Name = "fec_fin_t", Order = 8)]
-        public string fec_fin_t { get; set; }
+        public string Fec_fin_t { get; set; }
 
     }
 
@@ -47,15 +47,15 @@ namespace MyRESTService.Entity
     {
         public ReportType()
         {
-            this.name = string.Empty;
-            this.key = string.Empty;
+            this.Name = string.Empty;
+            this.Key = string.Empty;
         }
 
         [DataMember(Name = "name", Order = 1)]
-        public string name { get; set; }
+        public string Name { get; set; }
 
         [DataMember(Name = "key", Order = 2)]
-        public string key { get; set; }
+        public string Key { get; set; }
 
     }
 

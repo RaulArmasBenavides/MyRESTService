@@ -30,7 +30,7 @@ namespace MyRESTService
         {
             get { return products; }
         }
-        private List<Product> products = new List<Product>()
+        private readonly List<Product> products = new List<Product>()
         {
                 new Product() { ProductId = 1, Name = "Product 1", CategoryName = "Category 1", Price=10},
                 new Product() { ProductId = 1, Name = "Product 2", CategoryName = "Category 2", Price=5},
