@@ -67,9 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Helper2.cs" />
-    <Compile Include="Entity\Modelx.cs" />
-    <Compile Include="Entity\ReportEntity.cs" />
-    <Compile Include="Entity\ReporteTO.cs" />
     <Compile Include="IProductRESTService.cs" />
     <Compile Include="ProductRESTService.svc.cs">
       <DependentUpon>ProductRESTService.svc</DependentUpon>
@@ -87,6 +84,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wcfrestservice_erpmak\wcfrestservice.erpmak.entity.csproj">
+      <Project>{254F3D56-BCE8-4078-B681-04A4AC82CF8F}</Project>
+      <Name>wcfrestservice.erpmak.entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

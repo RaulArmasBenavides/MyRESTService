@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace MyRESTService.Entity
+namespace wcfrestservice.erpmak.entity
 {
     [DataContract(Name = "ReporteTO")]
     public class ReporteTO

@@ -2,6 +2,7 @@
 using System.IO;
 using System.ServiceModel;
 using System.ServiceModel.Web;
+using wcfrestservice.erpmak.entity;
 
 namespace MyRESTService
 {
@@ -26,6 +27,18 @@ namespace MyRESTService
            ResponseFormat = WebMessageFormat.Json)]
         string UploadImage(Stream stream);
 
+        [OperationContract]
+        [WebGet(UriTemplate = "/Appellants", ResponseFormat = WebMessageFormat.Json)]
+        Appellant[] GetAppellant();
+        [OperationContract]
+        [WebGet(UriTemplate = "/AppellantsXML", ResponseFormat = WebMessageFormat.Xml)]
+        Appellant[] GetAppellantXML();
+        [OperationContract]
+        [WebGet(UriTemplate = "/Appellant?id={id}", ResponseFormat = WebMessageFormat.Json)]
+        Appellant[] GetAppellantStatus(string id);
+        [OperationContract]
+        [WebGet(UriTemplate = "/AppellantXML?id={id}", ResponseFormat = WebMessageFormat.Xml)]
+        Appellant[] GetAppellantStatusXML(string id);
 
     }
 }
