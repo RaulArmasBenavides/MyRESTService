@@ -45,7 +45,7 @@
     <Compile Include="Appellant.cs" />
     <Compile Include="ReportEntity.cs" />
     <Compile Include="ReporteTO.cs" />
-    <Compile Include="ValueObjects\Class1.cs" />
+    <Compile Include="ValueObjects\ValueObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

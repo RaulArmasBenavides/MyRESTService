@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using MyRESTService.BusinessLogic.AbstractFactory;
+using MyRESTService.BusinessLogic.Concretions;
+using MyRESTService.BusinessLogic.Factory_Method;
+using System.Collections.Generic;
 using System.IO;
 using wcfrestservice.erpmak.entity;
 
@@ -8,6 +11,14 @@ namespace MyRESTService
     // NOTE: In order to launch WCF Test Client for testing this service, please select ProductRESTService.svc or ProductRESTService.svc.cs at the Solution Explorer and start debugging.
     public class ProductRESTService : IProductRESTService
     {
+        IAbstractFactory _absfactory;
+        Creator _absCreator;
+        ProductRESTService()
+        {
+            _absCreator = new ConcreteCreator1();
+            _absfactory = new ConcreteFactory1();
+        }
+
         public List<Product> GetProductList()
         {
             return Products.Instance.ProductList;

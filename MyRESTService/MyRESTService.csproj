@@ -66,6 +66,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\AbstractFactory\IAbstractFactory.cs" />
+    <Compile Include="BusinessLogic\AbstractFactory\IAbstractProductA.cs" />
+    <Compile Include="BusinessLogic\AbstractFactory\IAbstractProductB.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteFactory2.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteFactory1.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteProductA1.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteProductA2.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteProductB2.cs" />
+    <Compile Include="BusinessLogic\Concretions\ConcreteProductB1.cs" />
+    <Compile Include="BusinessLogic\Factory Method\ConcreteCreator2.cs" />
+    <Compile Include="BusinessLogic\Factory Method\ConcreteCreator1.cs" />
+    <Compile Include="BusinessLogic\Factory Method\ConcreteProduct1.cs" />
+    <Compile Include="BusinessLogic\Factory Method\ConcreteProduct2.cs" />
+    <Compile Include="BusinessLogic\Factory Method\Creator.cs" />
+    <Compile Include="BusinessLogic\Factory Method\IProduct.cs" />
     <Compile Include="Common\Helper2.cs" />
     <Compile Include="IProductRESTService.cs" />
     <Compile Include="ProductRESTService.svc.cs">
