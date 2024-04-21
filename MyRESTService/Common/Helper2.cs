@@ -30,16 +30,6 @@ namespace MyRESTService.Common
             return new Bitmap(stream);
         }
 
-        //public static Image StreamToBitmap(string path)
-        //{
-        //    new System.Drawing.Bitmap(System.Drawing.Image.FromFile(Server.MapPath("~/view/vacantapredeal/vacantapredeal.jpg")));
-        //    var imageObject = new Bitmap(new MemoryStream(File.ReadAllBytes(path)));
-        //    var _stream = new MemoryStream();
-        //    imageObject.Save(_stream, ImageFormat.Jpeg);
-        //    return new Bitmap(_stream);
-        //}
-
-
         public static void CreatingImageTest(string path)
         {
             var bitmap = new Bitmap(640, 480);

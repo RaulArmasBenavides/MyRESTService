@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using MyRESTService.Core;
+using System.Collections.Generic;
 using System.IO;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using wcfrestservice.erpmak.entity;
+
 
 namespace MyRESTService
 {

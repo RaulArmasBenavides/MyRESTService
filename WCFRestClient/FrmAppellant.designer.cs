@@ -1,5 +1,5 @@
 ﻿
-namespace WCFRestClient
+namespace MyRESTService.Client
 {
     partial class FrmAppellant
     {
@@ -40,16 +40,19 @@ namespace WCFRestClient
             // dgvAppellants
             // 
             this.dgvAppellants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAppellants.Location = new System.Drawing.Point(109, 71);
+            this.dgvAppellants.Location = new System.Drawing.Point(145, 87);
+            this.dgvAppellants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvAppellants.Name = "dgvAppellants";
-            this.dgvAppellants.Size = new System.Drawing.Size(988, 406);
+            this.dgvAppellants.RowHeadersWidth = 51;
+            this.dgvAppellants.Size = new System.Drawing.Size(1317, 500);
             this.dgvAppellants.TabIndex = 0;
             // 
             // btnJSON
             // 
-            this.btnJSON.Location = new System.Drawing.Point(109, 29);
+            this.btnJSON.Location = new System.Drawing.Point(145, 36);
+            this.btnJSON.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnJSON.Name = "btnJSON";
-            this.btnJSON.Size = new System.Drawing.Size(75, 23);
+            this.btnJSON.Size = new System.Drawing.Size(100, 28);
             this.btnJSON.TabIndex = 1;
             this.btnJSON.Text = "JSON";
             this.btnJSON.UseVisualStyleBackColor = true;
@@ -57,9 +60,10 @@ namespace WCFRestClient
             // 
             // btnPOX
             // 
-            this.btnPOX.Location = new System.Drawing.Point(190, 29);
+            this.btnPOX.Location = new System.Drawing.Point(253, 36);
+            this.btnPOX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPOX.Name = "btnPOX";
-            this.btnPOX.Size = new System.Drawing.Size(75, 23);
+            this.btnPOX.Size = new System.Drawing.Size(100, 28);
             this.btnPOX.TabIndex = 2;
             this.btnPOX.Text = "POX";
             this.btnPOX.UseVisualStyleBackColor = true;
@@ -67,9 +71,10 @@ namespace WCFRestClient
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(271, 29);
+            this.button3.Location = new System.Drawing.Point(361, 36);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,9 +82,10 @@ namespace WCFRestClient
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(352, 29);
+            this.button4.Location = new System.Drawing.Point(469, 36);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 4;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = true;
@@ -87,14 +93,15 @@ namespace WCFRestClient
             // 
             // FrmAppellant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1243, 539);
+            this.ClientSize = new System.Drawing.Size(1566, 699);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnPOX);
             this.Controls.Add(this.btnJSON);
             this.Controls.Add(this.dgvAppellants);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmAppellant";
             this.Text = "Appellants client API";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppellants)).EndInit();

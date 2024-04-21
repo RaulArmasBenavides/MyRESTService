@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRESTService", "MyRESTService\MyRESTService.csproj", "{C3E71871-2224-4D67-96AF-12DB8D757155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfrestservice.erpmak.entity", "wcfrestservice_erpmak\wcfrestservice.erpmak.entity.csproj", "{254F3D56-BCE8-4078-B681-04A4AC82CF8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRESTService.Core", "wcfrestservice_erpmak\MyRESTService.Core.csproj", "{254F3D56-BCE8-4078-B681-04A4AC82CF8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFRestClient", "WCFRestClient\WCFRestClient.csproj", "{5C543359-0C5A-440B-A297-EFCF98F8B354}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRESTService.Client", "WCFRestClient\MyRESTService.Client.csproj", "{5C543359-0C5A-440B-A297-EFCF98F8B354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

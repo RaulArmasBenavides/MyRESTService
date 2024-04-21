@@ -1,9 +1,9 @@
 ﻿using MyRESTService.BusinessLogic.AbstractFactory;
 using MyRESTService.BusinessLogic.Concretions;
 using MyRESTService.BusinessLogic.Factory_Method;
+using MyRESTService.Core;
 using System.Collections.Generic;
 using System.IO;
-using wcfrestservice.erpmak.entity;
 
 namespace MyRESTService
 {
@@ -13,10 +13,14 @@ namespace MyRESTService
     {
         IAbstractFactory _absfactory;
         Creator _absCreator;
-        ProductRESTService()
+        public ProductRESTService()
         {
-            _absCreator = new ConcreteCreator1();
-            _absfactory = new ConcreteFactory1();
+            _absCreator = new ConcreteCreator2();
+
+            _absfactory = new ConcreteFactory2();
+            _absfactory.CreateProductA();
+            _absfactory.CreateProductB();
+
         }
 
         public List<Product> GetProductList()

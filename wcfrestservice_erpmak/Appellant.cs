@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace wcfrestservice.erpmak.entity
+namespace MyRESTService.Core
 {
     [DataContract]
     public class Appellant
@@ -8,10 +8,10 @@ namespace wcfrestservice.erpmak.entity
         [DataMember]
         public int ID { get; set; }
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [DataMember]
-        public string AppealStatus { get; set; }
+        public string AppealStatus { get; set; } = string.Empty;
         [DataMember]
-        public string StatusDate { get; set; }
+        public string StatusDate { get; set; } = string.Empty;
     }
 }

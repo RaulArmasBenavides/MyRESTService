@@ -1,13 +1,13 @@
-﻿using System;
+﻿using MyRESTService.Core;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Runtime.Serialization;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
-using wcfrestservice.erpmak.entity;
 
-namespace WCFRestClient
+namespace MyRESTService.Client
 {
     public partial class FrmAppellant : Form
     {
@@ -29,8 +29,8 @@ namespace WCFRestClient
             this.dgvAppellants.DataSource = null;
         }
 
-    
- 
+
+
         private void btnJSON_Click(object sender, EventArgs e)
         {
             this.dgvAppellants.DataSource = null;

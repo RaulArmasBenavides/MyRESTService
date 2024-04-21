@@ -101,9 +101,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\wcfrestservice_erpmak\wcfrestservice.erpmak.entity.csproj">
+    <ProjectReference Include="..\wcfrestservice_erpmak\MyRESTService.Core.csproj">
       <Project>{254F3D56-BCE8-4078-B681-04A4AC82CF8F}</Project>
-      <Name>wcfrestservice.erpmak.entity</Name>
+      <Name>MyRESTService.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
