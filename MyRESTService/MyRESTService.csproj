@@ -101,8 +101,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\wcfrestservice_erpmak\MyRESTService.Core.csproj">
-      <Project>{254F3D56-BCE8-4078-B681-04A4AC82CF8F}</Project>
+    <ProjectReference Include="..\MyRESTService.Core\MyRESTService.Core.csproj">
+      <Project>{254f3d56-bce8-4078-b681-04a4ac82cf8f}</Project>
       <Name>MyRESTService.Core</Name>
     </ProjectReference>
   </ItemGroup>

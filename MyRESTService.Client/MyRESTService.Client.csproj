@@ -91,7 +91,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\wcfrestservice_erpmak\MyRESTService.Core.csproj">
+    <ProjectReference Include="..\MyRESTService.Core\MyRESTService.Core.csproj">
       <Project>{254f3d56-bce8-4078-b681-04a4ac82cf8f}</Project>
       <Name>MyRESTService.Core</Name>
     </ProjectReference>
