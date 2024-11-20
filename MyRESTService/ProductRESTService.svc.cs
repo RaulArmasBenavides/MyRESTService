@@ -1,6 +1,9 @@
 ﻿using MyRESTService.BusinessLogic.AbstractFactory;
 using MyRESTService.BusinessLogic.Concretions;
 using MyRESTService.BusinessLogic.Factory_Method;
+using MyRESTService.BusinessLogic.Strategy;
+using MyRESTService.BusinessLogic.Strategy.Implementations;
+using MyRESTService.BusinessLogic.Strategy.Interfaces;
 using MyRESTService.Core;
 using System.Collections.Generic;
 using System.IO;
@@ -141,6 +144,24 @@ namespace MyRESTService
             f.Close();
             stream.Close();
             return "Recieved the image on server";
+        }
+
+
+        public bool Processpayment()
+        {
+            IPaymentStrategy yape = new YapePayment();
+            IPaymentStrategy paypal = new PayPalPayment(); 
+            IPaymentStrategy creditCard = new CreditCardPayment();
+            IPaymentStrategy bankTransfer = new  BankTransferPayment();
+
+
+            PaymentProcess process= new PaymentProcess(yape);
+            process.ProcessPay(5000);
+            process.SetSrategy(creditCard);
+            process.ProcessPay(300);
+
+
+            return true;
         }
     }
 }

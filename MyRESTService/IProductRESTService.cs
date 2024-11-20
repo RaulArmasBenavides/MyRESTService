@@ -41,6 +41,11 @@ namespace MyRESTService
         [WebGet(UriTemplate = "/AppellantXML?id={id}", ResponseFormat = WebMessageFormat.Xml)]
         Appellant[] GetAppellantStatusXML(string id);
 
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/processpayment", ResponseFormat = WebMessageFormat.Json)]
+        bool Processpayment();
+
     }
 }
 
