@@ -81,6 +81,9 @@
     <Compile Include="BusinessLogic\Factory Method\ConcreteProduct2.cs" />
     <Compile Include="BusinessLogic\Factory Method\Creator.cs" />
     <Compile Include="BusinessLogic\Factory Method\IProduct.cs" />
+    <Compile Include="BusinessLogic\Strategy\Implementations\BankTransferPayment.cs" />
+    <Compile Include="BusinessLogic\Strategy\Interfaces\IPaymentStrategy.cs" />
+    <Compile Include="BusinessLogic\Strategy\PaymentProcess.cs" />
     <Compile Include="Common\Helper2.cs" />
     <Compile Include="IProductRESTService.cs" />
     <Compile Include="ProductRESTService.svc.cs">
